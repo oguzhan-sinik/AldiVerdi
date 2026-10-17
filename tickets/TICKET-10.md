@@ -1,7 +1,6 @@
 # 10 — Camera geometry readiness and B-side smoke test
 
 **Owner:** Developer B  
-**Window:** T+01:50–T+02:00 (elapsed hackathon time)  
 **Priority:** P0  
 **Files owned:** `backend/intelligence/geometry.py, data/processed/geometry-status.md`  
 **Depends on:** Tickets 06–09

@@ -1,7 +1,6 @@
 # 04 — Evidence viewer and timeline
 
 **Owner:** Developer A  
-**Window:** T+01:20–T+01:50 (elapsed hackathon time)  
 **Priority:** P0  
 **Files owned:** `frontend/components/EvidenceViewer.tsx, frontend/components/EvidenceTimeline.tsx`  
 **Depends on:** Tickets 01–03

@@ -1,7 +1,6 @@
 # 05 — Minimal investigation orchestrator with mock tools
 
 **Owner:** Developer A  
-**Window:** T+01:50–T+02:00 (elapsed hackathon time)  
 **Priority:** P0  
 **Files owned:** `backend/platform/`  
 **Depends on:** Tickets 01–04
@@ -21,7 +20,7 @@ Prove the UI can display a bounded investigation sequence without relying on liv
 - Mock mode is visibly labelled.
 
 ## Constraints / do not build
-- No complex agent framework, autonomous recursion, prompt tuning, RAG database, or real inference requirement in first two hours.
+- No complex agent framework, autonomous recursion, prompt tuning, RAG database, or real inference requirement in initial milestone.
 
 ## Deliverable / handoff
 A supplies callable interfaces for later Cosmos/VAST integration.

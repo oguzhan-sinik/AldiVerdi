@@ -26,4 +26,4 @@ HPWREN FIgLib: https://www.hpwren.ucsd.edu/FIgLib/ . Prefer documented multi-cam
 Only align by actual UTC timestamp or documented synchronization. If no absolute time, allow qualitative comparison but do not assert simultaneity. An event's appearance at different times is not necessarily the same source.
 
 ## Evidence citation contract
-Every observation includes `evidence_id`, `video_id`, `segment_id`, `start_s`, `end_s`, `observation`, `status`, `model`, `limitations`. Never fabricate second-precision event timestamps from sparsely sampled time-lapses.
+Every observation includes `evidence_id`, `video_id`, `start_s`, `end_s`, `observation`, `status`, and optional `segment_id`, `model`, `limitations`. Canonical seek target is `video_id` + offsets. Never fabricate second-precision event timestamps from sparsely sampled time-lapses.

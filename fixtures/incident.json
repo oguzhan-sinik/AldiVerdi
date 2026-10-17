@@ -1,23 +1,73 @@
 {
   "incident_id": "holy-fire-2018",
-  "title": "Holy Fire \u2014 source verification pending",
+  "title": "Holy Fire 2018 — SYNTHETIC FIXTURE (source verification pending)",
+  "data_mode": "synthetic_fixture",
   "cameras": [
     {
       "camera_id": "camera-unverified-a",
       "lat": null,
       "lon": null,
+      "alt_m": null,
       "heading_deg": null,
       "hfov_deg": null,
-      "orientation_verified": false
+      "orientation_verified": false,
+      "geometry_status": "unavailable"
+    },
+    {
+      "camera_id": "camera-unverified-b",
+      "lat": null,
+      "lon": null,
+      "alt_m": null,
+      "heading_deg": null,
+      "hfov_deg": null,
+      "orientation_verified": false,
+      "geometry_status": "unavailable"
     }
   ],
   "videos": [
     {
-      "video_id": "source-video-pending",
+      "video_id": "fixture-video-a",
       "camera_id": "camera-unverified-a",
-      "source_url": "https://www.hpwren.ucsd.edu/news/20180812/",
-      "duration_s": 0
+      "source_url": "fixture://pending-holy-fire-camera-a",
+      "duration_s": 120,
+      "playback_status": "unavailable",
+      "recording_start_utc": null,
+      "timestamp_basis": "synthetic_fixture",
+      "rights_note": "SYNTHETIC fixture for UI and contract tests only. Not real wildfire footage. Replace after tickets 06–08 with source-backed media (see https://www.hpwren.ucsd.edu/news/20180812/)."
+    },
+    {
+      "video_id": "fixture-video-b",
+      "camera_id": "camera-unverified-b",
+      "source_url": "fixture://pending-holy-fire-camera-b",
+      "duration_s": 90,
+      "playback_status": "unavailable",
+      "recording_start_utc": null,
+      "timestamp_basis": "synthetic_fixture",
+      "rights_note": "SYNTHETIC fixture for UI and contract tests only. Not an independent verified viewpoint. Replace after source verification."
     }
   ],
-  "evidence": []
+  "evidence": [
+    {
+      "evidence_id": "ev-fixture-smoke-a",
+      "video_id": "fixture-video-a",
+      "segment_id": "seg-fixture-a-1",
+      "start_s": 10,
+      "end_s": 25,
+      "observation": "SYNTHETIC FIXTURE: placeholder early-smoke interval for seek/provenance wiring only.",
+      "status": "unresolved",
+      "model": null,
+      "limitations": "No playable media attached. Do not treat as a verified observation of the Holy Fire."
+    },
+    {
+      "evidence_id": "ev-fixture-smoke-b",
+      "video_id": "fixture-video-b",
+      "segment_id": "seg-fixture-b-1",
+      "start_s": 5,
+      "end_s": 20,
+      "observation": "SYNTHETIC FIXTURE: placeholder second-camera interval for corroboration UI wiring only.",
+      "status": "unresolved",
+      "model": null,
+      "limitations": "Synthetic second viewpoint. Cross-camera corroboration is not established until real independent sources are verified."
+    }
+  ]
 }

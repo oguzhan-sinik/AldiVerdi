@@ -1,27 +1,21 @@
-# FireFront 3D — First two hours (Tickets 01–10)
+# FireFront 3D — Initial ticket backlog (01–10)
 
-These tickets extend the existing FireFront 3D preparation ZIP. Copy the Markdown files into your existing `tickets/` folder. Times are elapsed from hackathon start, not clock times. **Developer A owns platform and agent; Developer B owns video/data/OpenCV/geometry.**
+No clocks, deadlines, fixed-duration windows, or scheduled handoffs. **Advance only when a ticket passes its acceptance criteria.**
 
-## Parallel schedule
+## Independent work tracks
 
-| Window | Developer A | Developer B |
-|---|---|---|
-| 00:00–00:20 | 01 Contract freeze | 06 Source verification (brief joint contract review) |
-| 00:20–00:45 | 02 Platform shell | 06 then 07 Clips |
-| 00:45–01:00 | 03 Cesium terrain | 07 Clips |
-| 01:00–01:20 | 03 Cesium terrain | 08 Evidence manifest |
-| 01:20–01:25 | 04 Viewer | 08 Evidence manifest |
-| 01:25–01:50 | 04 Viewer | 09 OpenCV frame tools |
-| 01:50–02:00 | 05 Mock investigation | 10 Camera GeoJSON |
+| Developer A — Platform & Agent | Developer B — Video, Data & CV |
+|---|---|
+| 01 Contract and fixtures | 06 Verify incident footage and provenance |
+| 02 App shell | 07 Acquire playable clips |
+| 03 Cesium terrain and camera markers | 08 Export source-backed manifest |
+| 04 Evidence viewer and seek | 09 OpenCV frame tools |
+| 05 Mock investigation trace | 10 Camera geometry readiness |
 
-## Integration policy
-- First 20 minutes: jointly approve the schema, then **no shared-file edits** until T+02:30.
-- A never depends on B's files in this window: use fixtures.
-- B never depends on A's frontend: validate JSON and media independently.
-- At T+02:00, both have independently demonstrable deliverables. T+02:30 is the planned swap from fixtures to real data.
-- If a ticket runs over by 10 minutes, cut optional work, not the acceptance criteria of P0 tickets.
-- No automatic triangulation without verified camera position, bearing, and cross-view event correspondence.
+**Contract gate:** A proposes the minimum shared schema; B confirms it can represent actual assets and unknown metadata. Once accepted, both tracks proceed independently.
 
-## Definition of done at T+02:00
-A: terrain + camera selection + evidence playback + labelled mock investigation.  
-B: two source-backed clips + validated manifest + minimal frame tools + honest camera GeoJSON.
+**Integration gate:** A demonstrates fixture-backed map → camera → evidence playback → investigation trace. B supplies validated JSON and playable source-backed media. Swap fixtures for real assets only after both deliverables pass; fix mismatches at the boundary, not by cross-editing each other's code.
+
+**Scientific gate:** Do not present camera-bearing intersections as triangulation without verified independent viewpoints, orientations, and corresponding events. A map with verified camera pins and evidence is a valid fallback.
+
+**Rule:** Stop at acceptance criteria. No extra infrastructure, premature abstraction, speculative features, or work on another developer's owned files. If blocked, document it and apply the specified fallback.

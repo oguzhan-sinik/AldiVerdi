@@ -1,7 +1,6 @@
 # 03 — Render real terrain and camera markers
 
 **Owner:** Developer A  
-**Window:** T+00:45–T+01:20 (elapsed hackathon time)  
 **Priority:** P0  
 **Files owned:** `frontend/components/IncidentMap.tsx, frontend/lib/map.ts`  
 **Depends on:** Tickets 01–02

@@ -26,11 +26,20 @@ The answer must include evidence IDs, source-video timestamps, and geographic qu
 ## Explicitly out of scope
 Operational fire forecasting; 3D reconstruction of flames from monocular video; automatic photogrammetric camera calibration; training a wildfire detector; speculative geolocated fire points; deploying PhysicsNeMo/Earth-2; assuming all wildfire clips are the same incident.
 
+## Repository status
+This tree is an **implementation scaffold** plus frozen-path contracts, fixtures, and tickets. Application code under `frontend/` and `backend/` is not yet scaffolded; see ticket backlog. Validate contracts with:
+
+```bash
+pip install -r scripts/requirements.txt
+python scripts/validate_contracts.py
+pytest tests/test_contracts.py
+```
+
 ## First actions
-1. Read `docs/DECISIONS.md`, `docs/INTEGRATION.md`, and `tickets/BOARD.md`.
-2. Agree on `contracts/schema.json` and fixture samples; freeze them by T+00:20.
-3. A starts Cesium + UI + agent on fixture data. B starts real evidence acquisition + metadata + science adapter.
-4. At T+02:30 integrate only via frozen JSON contracts.
+1. Read `docs/DECISIONS.md`, `docs/INTEGRATION.md`, `docs/INITIAL-MILESTONE-EXECUTION.md`, and `tickets/00-INDEX.md`.
+2. Agree on `contracts/schema.json`, `contracts/investigation.schema.json`, and fixture samples; freeze before independent feature work.
+3. A starts Cesium + UI + agent on labelled synthetic fixtures. B starts real evidence acquisition + metadata + science adapter.
+4. Integrate only via frozen JSON contracts after both tracks meet their acceptance gates.
 
 ## Stack
 Next.js, TypeScript, Tailwind, CesiumJS, FastAPI/Python, OpenCV, NumPy, NVIDIA Cosmos Reason endpoint, VAST AI OS video search / Cosmos Embed1 if available, CoreWeave hosted inference, W&B Weave tracing. Exact endpoint request formats are **environment-specific** and must be tested at the event.

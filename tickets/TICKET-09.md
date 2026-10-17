@@ -1,7 +1,6 @@
 # 09 — Create fast video frame and change tools
 
 **Owner:** Developer B  
-**Window:** T+01:25–T+01:50 (elapsed hackathon time)  
 **Priority:** P1  
 **Files owned:** `backend/intelligence/video_tools.py, tests/`  
 **Depends on:** Tickets 07–08

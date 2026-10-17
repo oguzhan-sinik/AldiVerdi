@@ -1,7 +1,6 @@
 # 07 — Download and normalize two playable clips
 
 **Owner:** Developer B  
-**Window:** T+00:25–T+01:00 (elapsed hackathon time)  
 **Priority:** P0  
 **Files owned:** `data/raw/, data/processed/, scripts/prepare_clips.py`  
 **Depends on:** Ticket 06
@@ -22,7 +21,7 @@ Produce two small, locally playable MP4 clips with stable IDs and offsets.
 
 ## Constraints / do not build
 - No bulk ingest, cloud object storage, elaborate ETL, or 4K preservation.
-- If a source is inaccessible after 15 minutes, switch to another documented source.
+- If a source is inaccessible or cannot be verified, record the blocker and use a documented fallback.
 
 ## Deliverable / handoff
 B delivers two clips and manifest for later handoff; A continues with fixtures.

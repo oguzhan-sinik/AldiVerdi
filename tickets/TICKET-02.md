@@ -1,7 +1,6 @@
 # 02 — Launch the platform shell
 
 **Owner:** Developer A  
-**Window:** T+00:20–T+00:45 (elapsed hackathon time)  
 **Priority:** P0  
 **Files owned:** `frontend/`  
 **Depends on:** Ticket 01

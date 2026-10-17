@@ -21,10 +21,11 @@ flowchart TD
 ## Integration principles
 - B emits **structured evidence**, not UI components or arbitrary prose.
 - A consumes a stable API and never imports B's OpenCV modules directly.
-- All IDs are stable: `incident_id`, `camera_id`, `video_id`, `segment_id`, `evidence_id`.
-- Times use UTC ISO 8601 for wall clock and seconds for video-local playback; mapping must be explicit.
+- All IDs are stable: `incident_id`, `camera_id`, `video_id`, `evidence_id` (optional `segment_id` for grouping).
+- Times use UTC ISO 8601 for wall clock (`recording_start_utc`) and seconds for video-local playback (`start_s`/`end_s`); mapping must be explicit.
 - Camera bearings are geodetic degrees clockwise from true north; elevations in metres; angles may be null.
-- Spatial claims include `geometry_status`: `verified`, `estimated`, or `unavailable`.
+- Spatial claims include `geometry_status`: `verified`, `estimated`, or `unavailable`. Unknown lat/lon ⇒ no map pin.
+- Incidents declare `data_mode`: `synthetic_fixture` or `source_backed`. Investigations declare `execution_mode`: `mock`, `cached_replay`, or `live`.
 - Agent tools are bounded by a whitelist and a maximum action budget; errors become structured observations.
 
 ## Deployment

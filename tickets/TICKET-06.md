@@ -1,10 +1,9 @@
 # 06 — Verify incident sources and capture provenance
 
 **Owner:** Developer B  
-**Window:** T+00:00–T+00:25 (elapsed hackathon time)  
 **Priority:** P0  
 **Files owned:** `data/sources/, docs/DATA.md`  
-**Depends on:** None; joins contract review in first 20 minutes
+**Depends on:** None; joins contract review in contract approval
 
 ## Goal
 Select a real wildfire incident and identify at least two usable video segments from the same documented event.

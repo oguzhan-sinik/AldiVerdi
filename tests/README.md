@@ -1,3 +1,8 @@
 # tests
 
-See root README and docs. This directory is intentionally an implementation scaffold; event rules may restrict prebuilding.
+```bash
+pip install -r scripts/requirements.txt
+pytest tests/test_contracts.py
+```
+
+Frontend, video-pipeline, and geometry tests are added when those modules are implemented (tickets 02–10).

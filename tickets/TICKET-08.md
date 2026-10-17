@@ -1,7 +1,6 @@
 # 08 — Produce incident JSON and evidence ledger
 
 **Owner:** Developer B  
-**Window:** T+01:00–T+01:25 (elapsed hackathon time)  
 **Priority:** P0  
 **Files owned:** `data/processed/incident.json, data/processed/evidence.json`  
 **Depends on:** Tickets 01, 06–07
@@ -25,4 +24,4 @@ Represent the real footage in the frozen contract, with at least two timestamped
 - No automatic geolocation, timestamp extrapolation, or schema edits.
 
 ## Deliverable / handoff
-B provides JSON and playable media for T+02:30 integration checkpoint.
+B provides JSON and playable media for the integration gate.
