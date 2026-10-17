@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FireFront Incident Contract v1",
+  "type": "object",
+  "required": [
+    "incident_id",
+    "title",
+    "cameras",
+    "videos",
+    "evidence"
+  ],
+  "properties": {
+    "incident_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "cameras": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "camera_id",
+          "lat",
+          "lon",
+          "orientation_verified"
+        ],
+        "properties": {
+          "camera_id": {
+            "type": "string"
+          },
+          "lat": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "lon": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "heading_deg": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "hfov_deg": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "orientation_verified": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "videos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "video_id",
+          "camera_id",
+          "source_url",
+          "duration_s"
+        ],
+        "properties": {
+          "video_id": {
+            "type": "string"
+          },
+          "camera_id": {
+            "type": "string"
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "duration_s": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "video_id",
+          "start_s",
+          "end_s",
+          "observation",
+          "status"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "video_id": {
+            "type": "string"
+          },
+          "start_s": {
+            "type": "number"
+          },
+          "end_s": {
+            "type": "number"
+          },
+          "observation": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "observed",
+              "inferred",
+              "unresolved"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

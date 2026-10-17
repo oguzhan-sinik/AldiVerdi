@@ -1,0 +1,23 @@
+{
+  "incident_id": "holy-fire-2018",
+  "title": "Holy Fire \u2014 source verification pending",
+  "cameras": [
+    {
+      "camera_id": "camera-unverified-a",
+      "lat": null,
+      "lon": null,
+      "heading_deg": null,
+      "hfov_deg": null,
+      "orientation_verified": false
+    }
+  ],
+  "videos": [
+    {
+      "video_id": "source-video-pending",
+      "camera_id": "camera-unverified-a",
+      "source_url": "https://www.hpwren.ucsd.edu/news/20180812/",
+      "duration_s": 0
+    }
+  ],
+  "evidence": []
+}

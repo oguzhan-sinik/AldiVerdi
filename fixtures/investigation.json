@@ -1,0 +1,14 @@
+{
+  "investigation_id": "fixture-investigation",
+  "incident_id": "holy-fire-2018",
+  "status": "fixture_only",
+  "question": "Where was smoke first visible, and can another camera corroborate it?",
+  "actions": [
+    {
+      "type": "search_evidence",
+      "status": "pending",
+      "note": "Illustrative placeholder; no real model call"
+    }
+  ],
+  "claims": []
+}
