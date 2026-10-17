@@ -4,7 +4,7 @@ This repository was deliberately reset. **No Developer A Ticket 02 code is inclu
 
 ## Present
 - Project agreement and full setup/architecture/science/integration documentation.
-- Two continuous developer instructions.
+- Exactly two active tickets in `tickets/`: Developer A owns frontend/agent/application delivery; Developer B owns VAST access/data/evidence/scientific tools. The developer documentation pages link to these tickets.
 - New strict incident and investigation JSON Schemas.
 - Synthetic two-camera, two-video, two-evidence fixtures with unavailable media and null geometry.
 - Executable contract validator and pytest suite.
@@ -17,6 +17,6 @@ This repository was deliberately reset. **No Developer A Ticket 02 code is inclu
 
 ## First actions
 1. Run contract tests; A and B sign off on this **new** v1 baseline.
-2. Verify workshop VM/config, model endpoint accessibility and external footage policy.
-3. A starts **Next.js shell from zero**, then Cesium and evidence viewer.
-4. B starts HPWREN source verification, then authorized media preparation.
+2. Verify workshop VM/config, existing VSS access, W&B inference and external-footage permission; do not assume this planning cloud session is the VM.
+3. A proves supported Next.js deployment feasibility and develops the real-terrain frontend and bounded agent together against fixture/provider contracts.
+4. B delivers the single VSS provider, verifies Holy Fire source/rights/indexing/timing and supplies at least two independent real camera views for the complete demo.
