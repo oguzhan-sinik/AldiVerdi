@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "incident_id": "holy-fire-2018",
+  "name": "Holy Fire \u2014 Synthetic Contract Fixture",
+  "data_mode": "synthetic_fixture",
+  "description": "Not actual Holy Fire evidence. Placeholder records for interface and schema testing.",
+  "cameras": [
+    {
+      "camera_id": "cam-a",
+      "name": "Synthetic Camera A",
+      "lat": null,
+      "lon": null,
+      "alt_m": null,
+      "heading_deg": null,
+      "fov_deg": null,
+      "geometry_status": "unavailable"
+    },
+    {
+      "camera_id": "cam-b",
+      "name": "Synthetic Camera B",
+      "lat": null,
+      "lon": null,
+      "alt_m": null,
+      "heading_deg": null,
+      "fov_deg": null,
+      "geometry_status": "unavailable"
+    }
+  ],
+  "videos": [
+    {
+      "video_id": "vid-a",
+      "camera_id": "cam-a",
+      "source_url": "fixture://vid-a",
+      "playback_status": "unavailable",
+      "duration_s": null,
+      "recording_start_utc": null,
+      "timestamp_basis": "unknown",
+      "rights_note": "Synthetic fixture; not a real video."
+    },
+    {
+      "video_id": "vid-b",
+      "camera_id": "cam-b",
+      "source_url": "fixture://vid-b",
+      "playback_status": "unavailable",
+      "duration_s": null,
+      "recording_start_utc": null,
+      "timestamp_basis": "unknown",
+      "rights_note": "Synthetic fixture; not a real video."
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev-a",
+      "video_id": "vid-a",
+      "start_s": 0,
+      "end_s": 1,
+      "status": "unresolved",
+      "description": "Synthetic placeholder; no visual observation has been made.",
+      "limitations": [
+        "No playable footage exists."
+      ]
+    },
+    {
+      "evidence_id": "ev-b",
+      "video_id": "vid-b",
+      "start_s": 0,
+      "end_s": 1,
+      "status": "unresolved",
+      "description": "Synthetic placeholder; no visual observation has been made.",
+      "limitations": [
+        "No playable footage exists."
+      ]
+    }
+  ]
+}

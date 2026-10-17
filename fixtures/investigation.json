@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "incident_id": "holy-fire-2018",
+  "data_mode": "synthetic_fixture",
+  "investigation_id": "inv-fixture-001",
+  "question": "Which camera first observed smoke?",
+  "actions": [
+    {
+      "action_id": "act-1",
+      "tool": "search_evidence",
+      "evidence_ids": [
+        "ev-a",
+        "ev-b"
+      ],
+      "status": "mock",
+      "summary": "Synthetic example action, not a search result."
+    },
+    {
+      "action_id": "act-2",
+      "tool": "inspect_clip",
+      "evidence_ids": [
+        "ev-a"
+      ],
+      "status": "mock",
+      "summary": "Synthetic example; no clip was inspected."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "status": "unresolved",
+      "text": "Cannot determine from synthetic fixture data.",
+      "evidence_ids": [
+        "ev-a",
+        "ev-b"
+      ]
+    }
+  ]
+}

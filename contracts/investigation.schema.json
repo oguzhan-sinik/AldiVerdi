@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FireFront Investigation Contract v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "incident_id",
+    "data_mode",
+    "investigation_id",
+    "question",
+    "actions",
+    "claims"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "incident_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "data_mode": {
+      "enum": [
+        "synthetic_fixture",
+        "source_backed",
+        "live"
+      ]
+    },
+    "investigation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "question": {
+      "type": "string"
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "action_id",
+          "tool",
+          "evidence_ids",
+          "status",
+          "summary"
+        ],
+        "properties": {
+          "action_id": {
+            "type": "string"
+          },
+          "tool": {
+            "enum": [
+              "search_evidence",
+              "inspect_clip",
+              "compare_observations",
+              "measure_frames",
+              "evaluate_geometry"
+            ]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "status": {
+            "enum": [
+              "mock",
+              "completed",
+              "failed",
+              "blocked"
+            ]
+          },
+          "summary": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "claim_id",
+          "status",
+          "text",
+          "evidence_ids"
+        ],
+        "properties": {
+          "claim_id": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "observed",
+              "measured",
+              "hypothesized",
+              "unresolved"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
