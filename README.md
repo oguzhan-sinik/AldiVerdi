@@ -18,5 +18,7 @@ The repository intentionally contains no `frontend/package.json`, no Next.js app
 - `frontend/`, `backend/platform/`: Developer A implementation space
 - `backend/intelligence/`, `data/`: Developer B implementation space
 - `docs/`: full current documentation and two continuous developer specifications
+- `HACKATHON.md`, `ARCHITECTURE_REFERENCE.md`, `BEFORE_YOU_BUILD.md`, `config.example`, `.cursor/`, `docs/images/`, `docs/hackathon/`, `docs/*.pdf`: merged from the VAST Builders Challenge repo (rules, VSS API skills)
+- `tickets/`: active plan tickets
 
 No timed tickets, old runbooks, replacement guides, or inherited app code.

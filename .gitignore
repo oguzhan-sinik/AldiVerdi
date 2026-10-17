@@ -1,0 +1,46 @@
+# --- internal / agent context (not for attendees) ---
+.claude/
+
+# --- secrets & real per-team configs (keep only *.example tracked) ---
+.env
+.env.*
+!.env.example
+*.config
+!*.config.example
+secrets.yaml
+secrets.*.yaml
+config.yaml
+*-config.yaml
+!config.example
+!*.example.yaml
+
+# --- node / next ---
+node_modules/
+.next/
+
+# --- python ---
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# --- os / editor junk ---
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# --- misc local ---
+*.log
+tmp/
+resp.json
+
+# --- organizer verification script (internal) ---
+verify-vm.sh
+
+# --- live screen ---
+screen/
